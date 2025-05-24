@@ -1,0 +1,691 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guia completo de CSS - Demonstração avançada de todas as funcionalidades CSS modernas">
+    <meta name="keywords" content="CSS, Guia CSS, Tutorial CSS, CSS Avançado, Web Design, Frontend">
+    <meta name="author" content="Marcus Vinicius Fiuza Silva">
+    <title>Guia Completo de CSS - Portfolio Marcus Fiuza</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title animate-fade-up">Guia Completo de CSS</h1>
+            <p class="site-subtitle animate-slide-right">Demonstração Avançada de Cascading Style Sheets</p>
+            <p><strong>Desenvolvido por:</strong> Marcus Vinicius Fiuza Silva</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">← Voltar ao Início</a></li>
+                <li><a href="#selectores" class="nav-link">Seletores</a></li>
+                <li><a href="#box-model" class="nav-link">Box Model</a></li>
+                <li><a href="#layout" class="nav-link">Layout</a></li>
+                <li><a href="#tipografia" class="nav-link">Tipografia</a></li>
+                <li><a href="#cores" class="nav-link">Cores</a></li>
+                <li><a href="#animacoes" class="nav-link">Animações</a></li>
+                <li><a href="#responsivo" class="nav-link">Responsivo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <section id="introducao" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">Introdução ao CSS Moderno</h2>
+                    </header>
+                    
+                    <p>CSS (Cascading Style Sheets) é a linguagem responsável pela apresentação visual de documentos HTML. Este guia demonstra conceitos avançados e modernas práticas de desenvolvimento CSS.</p>
+                    
+                    <h3>Características deste Projeto CSS</h3>
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <h4 class="text-primary">Funcionalidades Implementadas</h4>
+                            <ul>
+                                <li><strong>Custom Properties (CSS Variables)</strong> - Sistema de design tokens</li>
+                                <li><strong>CSS Grid</strong> - Layout moderno e responsivo</li>
+                                <li><strong>Flexbox</strong> - Alinhamento e distribuição</li>
+                                <li><strong>Animações CSS</strong> - Transições e keyframes</li>
+                                <li><strong>Media Queries</strong> - Design responsivo</li>
+                                <li><strong>Pseudo-elementos</strong> - Efeitos decorativos</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-primary">Metodologias Aplicadas</h4>
+                            <ul>
+                                <li><strong>Mobile-First</strong> - Desenvolvimento responsivo</li>
+                                <li><strong>BEM-like</strong> - Nomenclatura consistente</li>
+                                <li><strong>Design Tokens</strong> - Variáveis CSS organizadas</li>
+                                <li><strong>Progressive Enhancement</strong> - Funcionalidades graduais</li>
+                                <li><strong>Accessibility</strong> - Suporte a tecnologias assistivas</li>
+                                <li><strong>Performance</strong> - Otimização e eficiência</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="selectores" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">1. Seletores CSS Avançados</h2>
+                    </header>
+                    
+                    <h3>Tipos de Seletores</h3>
+                    <div class="table-container">
+                        <table class="professional-table">
+                            <caption>Demonstração de Seletores CSS</caption>
+                            <thead>
+                                <tr>
+                                    <th>Seletor</th>
+                                    <th>Sintaxe</th>
+                                    <th>Descrição</th>
+                                    <th>Exemplo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Universal</strong></td>
+                                    <td><code>*</code></td>
+                                    <td>Seleciona todos os elementos</td>
+                                    <td><code>* { margin: 0; }</code></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Elemento</strong></td>
+                                    <td><code>elemento</code></td>
+                                    <td>Seleciona elementos por tag</td>
+                                    <td><code>h1 { color: blue; }</code></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Classe</strong></td>
+                                    <td><code>.classe</code></td>
+                                    <td>Seleciona elementos por classe</td>
+                                    <td><code>.card { padding: 1rem; }</code></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ID</strong></td>
+                                    <td><code>#id</code></td>
+                                    <td>Seleciona elemento por ID único</td>
+                                    <td><code>#header { position: fixed; }</code></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Atributo</strong></td>
+                                    <td><code>[attr]</code></td>
+                                    <td>Seleciona por atributo</td>
+                                    <td><code>[required] { border: red; }</code></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pseudo-classe</strong></td>
+                                    <td><code>:pseudo</code></td>
+                                    <td>Estados especiais</td>
+                                    <td><code>a:hover { color: red; }</code></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pseudo-elemento</strong></td>
+                                    <td><code>::pseudo</code></td>
+                                    <td>Partes específicas</td>
+                                    <td><code>p::first-line { font-weight: bold; }</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Exemplo Prático - Seletores Combinados</h3>
+                    <pre><code>/* Seletor descendente */
+.card p {
+    margin-bottom: 1rem;
+}
+
+/* Seletor filho direto */
+.nav-list > li {
+    display: inline-block;
+}
+
+/* Seletor irmão adjacente */
+h2 + p {
+    font-size: 1.125rem;
+}
+
+/* Seletor de atributo com valor */
+input[type="email"] {
+    background-image: url(email-icon.svg);
+}
+
+/* Pseudo-classes estruturais */
+tr:nth-child(even) {
+    background-color: var(--gray-50);
+}
+
+/* Pseudo-elementos avançados */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.btn:hover::before {
+    transform: translateX(100%);
+}</code></pre>
+                </div>
+            </section>
+
+            <section id="box-model" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">2. Box Model e Dimensionamento</h2>
+                    </header>
+                    
+                    <p>O Box Model é fundamental para entender como os elementos são renderizados no CSS.</p>
+                    
+                    <h3>Componentes do Box Model</h3>
+                    <div style="border: 4px solid var(--primary-600); margin: var(--space-6) 0; padding: var(--space-8); background: var(--primary-50); text-align: center; position: relative;">
+                        <div style="background: var(--warning); padding: var(--space-4); margin: var(--space-4); border: 2px dashed var(--gray-600);">
+                            <div style="background: var(--success); padding: var(--space-4); border: 2px solid var(--gray-800);">
+                                <strong>CONTENT</strong><br>
+                                Conteúdo do elemento
+                            </div>
+                            <small style="color: var(--gray-700);">PADDING - Espaçamento interno</small>
+                        </div>
+                        <small style="position: absolute; bottom: 5px; left: 5px; color: var(--primary-700); font-weight: bold;">BORDER - Borda do elemento</small>
+                        <small style="position: absolute; top: 5px; right: 5px; color: var(--primary-700); font-weight: bold;">MARGIN - Espaçamento externo</small>
+                    </div>
+                    
+                    <h3>Propriedades de Dimensionamento</h3>
+                    <pre><code>/* Box Sizing */
+* {
+    box-sizing: border-box; /* Inclui padding e border no width */
+}
+
+/* Dimensões básicas */
+.element {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 320px;
+    height: auto;
+    min-height: 100vh;
+}
+
+/* Margens e Padding */
+.spacing-example {
+    margin: 2rem 1rem 1.5rem 1rem; /* top right bottom left */
+    padding: 1rem; /* Todos os lados iguais */
+    margin-inline: auto; /* Centralização horizontal moderna */
+    padding-block: 2rem; /* Padding vertical lógico */
+}
+
+/* Overflow */
+.container {
+    overflow: hidden; /* Esconde conteúdo excedente */
+    overflow-x: auto; /* Scroll horizontal quando necessário */
+    overflow-y: scroll; /* Scroll vertical sempre visível */
+}</code></pre>
+                </div>
+            </section>
+
+            <section id="layout" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">3. Sistemas de Layout Modernos</h2>
+                    </header>
+                    
+                    <h3>CSS Grid - Layout Bidimensional</h3>
+                    <div class="grid grid-cols-3" style="gap: var(--space-4); margin: var(--space-6) 0;">
+                        <div style="background: var(--primary-100); padding: var(--space-4); text-align: center; border-radius: var(--radius-md);">Grid Item 1</div>
+                        <div style="background: var(--primary-200); padding: var(--space-4); text-align: center; border-radius: var(--radius-md);">Grid Item 2</div>
+                        <div style="background: var(--primary-300); padding: var(--space-4); text-align: center; border-radius: var(--radius-md);">Grid Item 3</div>
+                    </div>
+                    
+                    <pre><code>/* CSS Grid Básico */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+/* Grid Avançado com Áreas */
+.layout-grid {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar main aside"
+        "footer footer footer";
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.aside { grid-area: aside; }
+.footer { grid-area: footer; }
+
+/* Grid Responsivo */
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}</code></pre>
+
+                    <h3>Flexbox - Layout Unidimensional</h3>
+                    <div style="display: flex; gap: var(--space-4); margin: var(--space-6) 0; padding: var(--space-4); background: var(--gray-100); border-radius: var(--radius-lg);">
+                        <div style="flex: 1; background: var(--success); color: white; padding: var(--space-3); text-align: center; border-radius: var(--radius-md);">Flex Item 1</div>
+                        <div style="flex: 2; background: var(--warning); color: white; padding: var(--space-3); text-align: center; border-radius: var(--radius-md);">Flex Item 2 (2x)</div>
+                        <div style="flex: 1; background: var(--error); color: white; padding: var(--space-3); text-align: center; border-radius: var(--radius-md);">Flex Item 3</div>
+                    </div>
+                    
+                    <pre><code>/* Flexbox Básico */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Distribuição horizontal */
+    align-items: center; /* Alinhamento vertical */
+    gap: 1rem;
+}
+
+/* Flex Items */
+.flex-item {
+    flex: 1; /* Crescimento igual */
+    flex-basis: 200px; /* Base mínima */
+    flex-shrink: 0; /* Não encolhe */
+}
+
+/* Direções e Wrap */
+.flex-column {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/* Alinhamento Individual */
+.flex-item-center {
+    align-self: center;
+}
+
+/* Flexbox para Componentes */
+.card-flex {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-content {
+    flex: 1; /* Ocupa espaço disponível */
+}
+
+.card-footer {
+    margin-top: auto; /* Empurra para baixo */
+}</code></pre>
+                </div>
+            </section>
+
+            <section id="tipografia" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">4. Tipografia Avançada</h2>
+                    </header>
+                    
+                    <h3>Sistema de Tipografia</h3>
+                    <div style="margin: var(--space-6) 0;">
+                        <h1 style="margin-bottom: var(--space-2);">Heading 1 - 3rem (48px)</h1>
+                        <h2 style="margin-bottom: var(--space-2);">Heading 2 - 1.875rem (30px)</h2>
+                        <h3 style="margin-bottom: var(--space-2);">Heading 3 - 1.5rem (24px)</h3>
+                        <h4 style="margin-bottom: var(--space-2);">Heading 4 - 1.25rem (20px)</h4>
+                        <p><strong>Texto em negrito</strong>, <em>texto em itálico</em>, <code>código inline</code></p>
+                        <p style="font-family: var(--font-secondary);">Texto com fonte monoespaçada para código</p>
+                    </div>
+                    
+                    <pre><code>/* Sistema de Tipografia com Variáveis */
+:root {
+    --font-primary: 'Inter', system-ui, sans-serif;
+    --font-secondary: 'JetBrains Mono', monospace;
+    --font-display: 'Poppins', var(--font-primary);
+    
+    /* Escala tipográfica modular (1.25 - Major Third) */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+}
+
+/* Tipografia responsiva */
+h1 {
+    font-size: clamp(2rem, 4vw, var(--text-5xl));
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+/* Propriedades avançadas */
+.text-optimized {
+    font-variant-numeric: oldstyle-nums;
+    font-feature-settings: "liga" 1, "kern" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Texto responsivo */
+.responsive-text {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+/* Limitar largura para legibilidade */
+.readable-text {
+    max-width: 65ch; /* 65 caracteres */
+    line-height: 1.6;
+}</code></pre>
+                </div>
+            </section>
+
+            <section id="cores" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">5. Sistema de Cores</h2>
+                    </header>
+                    
+                    <h3>Paleta de Cores do Projeto</h3>
+                    <div class="grid grid-cols-4" style="gap: var(--space-4); margin: var(--space-6) 0;">
+                        <div style="background: var(--primary-500); color: white; padding: var(--space-4); text-align: center; border-radius: var(--radius-md);">Primary 500<br><small>#0ea5e9</small></div>
+                        <div style="background: var(--success); color: white; padding: var(--space-4); text-align: center; border-radius: var(--radius-md);">Success<br><small>#10b981</small></div>
+                        <div style="background: var(--warning); color: white; padding: var(--space-4); text-align: center; border-radius: var(--radius-md);">Warning<br><small>#f59e0b</small></div>
+                        <div style="background: var(--error); color: white; padding: var(--space-4); text-align: center; border-radius: var(--radius-md);">Error<br><small>#ef4444</small></div>
+                    </div>
+                    
+                    <h3>Gradientes e Efeitos</h3>
+                    <div style="margin: var(--space-6) 0;">
+                        <div style="background: linear-gradient(135deg, var(--primary-500), var(--primary-700)); height: 100px; border-radius: var(--radius-lg); margin-bottom: var(--space-4); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Gradiente Linear</div>
+                        <div style="background: radial-gradient(circle, var(--primary-300), var(--primary-600)); height: 100px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Gradiente Radial</div>
+                    </div>
+                    
+                    <pre><code>/* Sistema de Cores com Custom Properties */
+:root {
+    --primary-50: #f0f9ff;
+    --primary-100: #e0f2fe;
+    --primary-500: #0ea5e9;
+    --primary-900: #0c4a6e;
+    
+    --gray-50: #f9fafb;
+    --gray-900: #111827;
+    
+    /* Cores semânticas */
+    --success: #10b981;
+    --warning: #f59e0b;
+    --error: #ef4444;
+}
+
+/* Gradientes */
+.gradient-primary {
+    background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+}
+
+.gradient-radial {
+    background: radial-gradient(circle at center, var(--primary-300), var(--primary-600));
+}
+
+/* Transparências */
+.bg-primary-opacity {
+    background-color: rgb(14 165 233 / 0.1); /* Sintaxe moderna */
+}
+
+/* Cores condicionais */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: var(--gray-100);
+        --bg-color: var(--gray-900);
+    }
+}</code></pre>
+                </div>
+            </section>
+
+            <section id="animacoes" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">6. Animações e Transições</h2>
+                    </header>
+                    
+                    <h3>Demonstrações Interativas</h3>
+                    <div style="display: flex; gap: var(--space-4); margin: var(--space-6) 0; flex-wrap: wrap;">
+                        <div style="background: var(--primary-500); color: white; padding: var(--space-4); border-radius: var(--radius-md); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.1) rotate(5deg)'" onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                            Hover Transform
+                        </div>
+                        <div class="animate-pulse" style="background: var(--success); color: white; padding: var(--space-4); border-radius: var(--radius-md);">
+                            Animação Pulse
+                        </div>
+                        <div style="background: var(--warning); color: white; padding: var(--space-4); border-radius: var(--radius-md); animation: slideInRight 1s ease-out;">
+                            Slide Animation
+                        </div>
+                    </div>
+                    
+                    <pre><code>/* Transições */
+.smooth-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-effect:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Keyframes para animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+/* Aplicação de animações */
+.animate-fade-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-slide-right {
+    animation: slideInRight 0.8s ease-out;
+}
+
+.animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Animações com delay */
+.stagger-animation:nth-child(1) { animation-delay: 0.1s; }
+.stagger-animation:nth-child(2) { animation-delay: 0.2s; }
+.stagger-animation:nth-child(3) { animation-delay: 0.3s; }
+
+/* Performance - animações apenas em transform e opacity */
+.performance-animation {
+    will-change: transform, opacity;
+    transform: translateZ(0); /* Força aceleração de hardware */
+}</code></pre>
+                </div>
+            </section>
+
+            <section id="responsivo" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">7. Design Responsivo</h2>
+                    </header>
+                    
+                    <h3>Breakpoints e Media Queries</h3>
+                    <div class="table-container">
+                        <table class="professional-table">
+                            <caption>Sistema de Breakpoints</caption>
+                            <thead>
+                                <tr>
+                                    <th>Dispositivo</th>
+                                    <th>Largura Mínima</th>
+                                    <th>Media Query</th>
+                                    <th>Características</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Mobile</strong></td>
+                                    <td>320px - 767px</td>
+                                    <td><code>@media (max-width: 767px)</code></td>
+                                    <td>Layout vertical, navegação colapsada</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tablet</strong></td>
+                                    <td>768px - 1023px</td>
+                                    <td><code>@media (min-width: 768px)</code></td>
+                                    <td>Layout híbrido, 2 colunas</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Desktop</strong></td>
+                                    <td>1024px+</td>
+                                    <td><code>@media (min-width: 1024px)</code></td>
+                                    <td>Layout completo, múltiplas colunas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <pre><code>/* Mobile First Approach */
+.responsive-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: 1 coluna */
+    gap: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .responsive-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .responsive-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    }
+}
+
+/* Queries avançadas */
+@media (orientation: landscape) {
+    .landscape-layout {
+        flex-direction: row;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Container queries (futuro) */
+@container (min-width: 400px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Unidades responsivas */
+.fluid-typography {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    margin: clamp(1rem, 5vw, 3rem) 0;
+}
+
+/* Imagens responsivas */
+.responsive-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}</code></pre>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">Conclusão</h2>
+                    </header>
+                    
+                    <p>Este guia demonstra as principais funcionalidades do CSS moderno, desde conceitos fundamentais até técnicas avançadas. O CSS evoluiu significativamente e oferece ferramentas poderosas para criar interfaces web sofisticadas e responsivas.</p>
+                    
+                    <h3>Próximos Passos</h3>
+                    <ul>
+                        <li><strong>CSS Grid Layout</strong> - Explore layouts mais complexos</li>
+                        <li><strong>CSS Custom Properties</strong> - Crie sistemas de design escaláveis</li>
+                        <li><strong>CSS Container Queries</strong> - Responsividade baseada em container</li>
+                        <li><strong>CSS-in-JS</strong> - Integração com frameworks JavaScript</li>
+                        <li><strong>PostCSS</strong> - Ferramentas de build para CSS</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <address>
+                    <p><strong>Marcus Vinicius Fiuza Silva</strong></p>
+                    <p>Email: <a href="mailto:marcusvinifiuza739@gmail.com" class="footer-link">marcusvinifiuza739@gmail.com</a></p>
+                    <p>Telefone: <a href="tel:+5531996350383" class="footer-link">+55 31 99635-0383</a></p>
+                </address>
+                <nav style="margin-top: var(--space-6);">
+                    <h3>Navegação</h3>
+                    <ul style="list-style: none; display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+                        <li><a href="index.html" class="footer-link">Início</a></li>
+                        <li><a href="sobre-html.html" class="footer-link">Guia HTML</a></li>
+                        <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                        <li><a href="contato.html" class="footer-link">Contato</a></li>
+                    </ul>
+                </nav>
+                <p style="margin-top: var(--space-6);"><small>&copy; 2024 - Demonstração CSS Avançado por Marcus Fiuza</small></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
