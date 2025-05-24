@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guia técnico completo de elementos HTML - Demonstração de domínio da linguagem">
+    <meta name="keywords" content="HTML, elementos, tags, semântica, acessibilidade, W3C">
+    <meta name="author" content="Marcus Vinicius Fiuza Silva">
+    <title>Guia Técnico de HTML - Marcus Fiuza</title>
+</head>
+<body>
+    <header>
+        <h1>Guia Técnico Completo de HTML</h1>
+        <p>Demonstração prática de todos os elementos relevantes da linguagem HTML</p>
+    </header>
+
+    <nav>
+        <h2>Navegação</h2>
+        <ul>
+            <li><a href="index.html">← Voltar ao Início</a></li>
+            <li><a href="#estrutura">Estrutura de Documento</a></li>
+            <li><a href="#texto">Elementos de Texto</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#tabelas">Tabelas</a></li>
+            <li><a href="#formularios">Formulários</a></li>
+            <li><a href="#midias">Mídias</a></li>
+            <li><a href="#semanticos">Elementos Semânticos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article id="estrutura">
+            <h2>1. Estrutura de Documento</h2>
+            <section>
+                <h3>Declaração DOCTYPE e Elemento Raiz</h3>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Conteúdo da página --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                <dl>
+                    <dt><code>&lt;!DOCTYPE html&gt;</code></dt>
+                    <dd>Declaração que define o documento como HTML5</dd>
+                    
+                    <dt><code>&lt;html&gt;</code></dt>
+                    <dd>Elemento raiz que contém todo o conteúdo da página</dd>
+                    
+                    <dt><code>&lt;head&gt;</code></dt>
+                    <dd>Contém metadados sobre o documento</dd>
+                    
+                    <dt><code>&lt;body&gt;</code></dt>
+                    <dd>Contém todo o conteúdo visível da página</dd>
+                </dl>
+            </section>
+        </article>
+
+        <article id="texto">
+            <h2>2. Elementos de Texto e Formatação</h2>
+            <section>
+                <h3>Títulos e Hierarquia</h3>
+                <h1>Título Nível 1 (h1)</h1>
+                <h2>Título Nível 2 (h2)</h2>
+                <h3>Título Nível 3 (h3)</h3>
+                <h4>Título Nível 4 (h4)</h4>
+                <h5>Título Nível 5 (h5)</h5>
+                <h6>Título Nível 6 (h6)</h6>
+
+                <h3>Elementos de Formatação</h3>
+                <p>Parágrafo normal com <strong>texto forte</strong> e <em>texto enfatizado</em>.</p>
+                <p>Texto com <mark>destaque visual</mark> e <code>código inline</code>.</p>
+                <p>Texto <small>pequeno</small>, <sub>subscrito</sub> e <sup>sobrescrito</sup>.</p>
+                <p><s>Texto riscado</s> e <u>texto sublinhado</u>.</p>
+                <p><abbr title="World Wide Web Consortium">W3C</abbr> é uma organização internacional.</p>
+
+                <h3>Quebras e Separadores</h3>
+                <p>Primeira linha<br>Segunda linha após quebra</p>
+                <hr>
+                <p>Parágrafo após linha horizontal</p>
+
+                <h3>Citações</h3>
+                <blockquote cite="https://developer.mozilla.org/">
+                    <p>"HTML é a linguagem de marcação padrão para criar páginas web."</p>
+                </blockquote>
+                <p>Como disse Tim Berners-Lee: <q>A Web foi projetada para ser descentralizada.</q></p>
+
+                <h3>Código e Pré-formatação</h3>
+                <pre>
+function exemploJavaScript() {
+    console.log("Código pré-formatado");
+    return true;
+}
+                </pre>
+                <p>Variável <var>x</var> recebe o valor <kbd>Ctrl+C</kbd> para <samp>copiar</samp>.</p>
+            </section>
+        </article>
+
+        <article id="listas">
+            <h2>3. Listas</h2>
+            <section>
+                <h3>Lista Não Ordenada</h3>
+                <ul>
+                    <li>Primeiro item</li>
+                    <li>Segundo item
+                        <ul>
+                            <li>Sub-item 1</li>
+                            <li>Sub-item 2</li>
+                        </ul>
+                    </li>
+                    <li>Terceiro item</li>
+                </ul>
+
+                <h3>Lista Ordenada</h3>
+                <ol>
+                    <li>Primeiro passo</li>
+                    <li>Segundo passo</li>
+                    <li>Terceiro passo</li>
+                </ol>
+
+                <h3>Lista de Definições</h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>HyperText Markup Language - Linguagem de marcação para web</dd>
+                    
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets - Linguagem de estilização</dd>
+                    
+                    <dt>JavaScript</dt>
+                    <dd>Linguagem de programação para web dinâmica</dd>
+                </dl>
+            </section>
+        </article>
+
+        <article id="tabelas">
+            <h2>4. Tabelas</h2>
+            <section>
+                <h3>Tabela Completa com Todos os Elementos</h3>
+                <table border="1">
+                    <caption>Exemplo de Tabela HTML Completa</caption>
+                    <colgroup>
+                        <col style="width: 25%;">
+                        <col style="width: 50%;">
+                        <col style="width: 25%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Elemento</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Uso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">&lt;table&gt;</th>
+                            <td>Elemento container da tabela</td>
+                            <td>Obrigatório</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">&lt;caption&gt;</th>
+                            <td>Título/legenda da tabela</td>
+                            <td>Opcional</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">&lt;thead&gt;</th>
+                            <td>Cabeçalho da tabela</td>
+                            <td>Recomendado</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">&lt;tbody&gt;</th>
+                            <td>Corpo principal da tabela</td>
+                            <td>Recomendado</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"><strong>Total de elementos demonstrados:</strong></td>
+                            <td><strong>4</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+
+        <article id="formularios">
+            <h2>5. Formulários</h2>
+            <section>
+                <h3>Elementos de Formulário</h3>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Informações Pessoais</legend>
+                        
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required maxlength="100">
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" pattern="[0-9\-\+\s\(\)]+">
+                        
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" id="nascimento" name="nascimento">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferências</legend>
+                        
+                        <label for="pais">País:</label>
+                        <select id="pais" name="pais">
+                            <option value="">Selecione um país</option>
+                            <option value="br">Brasil</option>
+                            <option value="pt">Portugal</option>
+                            <option value="us">Estados Unidos</option>
+                        </select>
+                        
+                        <fieldset>
+                            <legend>Áreas de Interesse</legend>
+                            <input type="checkbox" id="web" name="interesse" value="web">
+                            <label for="web">Desenvolvimento Web</label>
+                            
+                            <input type="checkbox" id="mobile" name="interesse" value="mobile">
+                            <label for="mobile">Desenvolvimento Mobile</label>
+                            
+                            <input type="checkbox" id="ai" name="interesse" value="ai">
+                            <label for="ai">Inteligência Artificial</label>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Nível de Experiência</legend>
+                            <input type="radio" id="iniciante" name="nivel" value="iniciante">
+                            <label for="iniciante">Iniciante</label>
+                            
+                            <input type="radio" id="intermediario" name="nivel" value="intermediario">
+                            <label for="intermediario">Intermediário</label>
+                            
+                            <input type="radio" id="avancado" name="nivel" value="avancado">
+                            <label for="avancado">Avançado</label>
+                        </fieldset>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Mensagem</legend>
+                        <label for="mensagem">Sua mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" cols="50" placeholder="Digite sua mensagem aqui..."></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Ações</legend>
+                        <button type="submit">Enviar Formulário</button>
+                        <button type="reset">Limpar Campos</button>
+                        <input type="button" value="Botão Personalizado">
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+
+        <article id="midias">
+            <h2>6. Elementos de Mídia</h2>
+            <section>
+                <h3>Imagens</h3>
+                <figure>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2NjIi8+CiAgPHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlbSBkZSBFeGVtcGxvPC90ZXh0Pgo8L3N2Zz4=" alt="Imagem de exemplo demonstrando placeholder SVG" width="300" height="200">
+                    <figcaption>Figura 1: Exemplo de imagem com legenda usando SVG inline</figcaption>
+                </figure>
+
+                <h3>Áudio</h3>
+                <audio controls>
+                    <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSuFzvHZizEIFWKz8OOdTgwOUarm7blqFgU7k9n1unYfBSZzw+/ejC8ICkOX0eeuXAcFOIPe8qNjFQQ0hdMF2X8gBzSB2QnVfRkJLWz+5LRaEAUvf8u64HEjBzKBzgfNdSEGNHvM5r5iAQoQbaX88tdcCAqClfjXfRgBV7CU1ppAQA9YoJSIFKGU6IyZl6mMfU2/cXFUl8CTUVZ1LlQxSoOCYXJNfmGBWHpNvSB0RZXJmHGlY6iq2Xqqg7JjVGmpqGljaHJnfKWQY3JdqZOQY3JUrnJqY3JNimSYZW1zaWJoaqqTU6CCY3Jdqqmp1qJhqppjY3Jnqp2ZbZdcq2F0YZSxnGlta2iqY3Jdqpl5qo9+q4dZY3JnqqNs1pJzVGliqp1jq2lqY2Coi1OlZm1zaWJoaqqTU6CCY3Jdqql5nKmYY3JdqlSbZW1zaWJoaqqTU6CCY3JdqqpjqqRj" type="audio/wav">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <p><em>Nota: Áudio de exemplo usando data URI</em></p>
+
+                <h3>Vídeo</h3>
+                <video width="320" height="240" controls>
+                    <source src="data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAAIZnJlZQAAAr1tZGF0AAACrQYF//+c3EXpvebZSLeWLNgg2SPu73gyNjQgLSBjb3JlIDE1MiByMjg1NCBlOWE1OTAzIC0gSC4yNjQvTVBFRy00IEFWQyBjb2RlYyAtIENvcHlsZWZ0IDIwMDMtMjAxNyAtIGh0dHA6Ly93d3cudmlkZW9sYW4ub3JnL3gyNjQuaHRtbCAtIG9wdGlvbnM6IGNhYmFjPTEgcmVmPTMgZGVibG9jaz0xOjA6MCBhbmFseXNlPTB4MzoweDExMyBtZT1oZXggc3VibWU9NyBwc3k9MSBwc3lfcmQ9MS4wMDowLjAwIG1peGVkX3JlZj0xIG1lX3JhbmdlPTE2IGNocm9tYV9tZT0xIHRyZWxsaXM9MSA4eDhkY3Q9MSBjcW09MCBkZWFkem9uZT0yMSwxMSBmYXN0X3Bza2lwPTEgY2hyb21hX3FwX29mZnNldD0tMiB0aHJlYWRzPTEgbG9va2FoZWFkX3RocmVhZHM9MSBzbGljZWRfdGhyZWFkcz0wIG5yPTAgZGVjaW1hdGU9MSBpbnRlcmxhY2VkPTAgYmx1cmF5X2NvbXBhdD0wIGNvbnN0cmFpbmVkX2ludHJhPTAgYmZyYW1lcz0zIGJfcHlyYW1pZD0yIGJfYWRhcHQ9MSBiX2JpYXM9MCBkaXJlY3Q9MSB3ZWlnaHRiPTEgb3Blbl9nb3A9MCB3ZWlnaHRwPTIga2V5aW50PTI1MCBrZXlpbnRfbWluPTEwIHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAD2WIhAA3//728P4FNjuY0EA=" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+
+                <h3>Incorporação (iframe)</h3>
+                <iframe src="data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3E%3Ch1%3EConteúdo%20Incorporado%3C/h1%3E%3Cp%3EEste%20é%20um%20exemplo%20de%20iframe.%3C/p%3E%3C/body%3E%3C/html%3E" width="300" height="150" title="Exemplo de iframe com conteúdo HTML">
+                    Conteúdo alternativo para navegadores que não suportam iframe.
+                </iframe>
+            </section>
+        </article>
+
+        <article id="semanticos">
+            <h2>7. Elementos Semânticos</h2>
+            <section>
+                <h3>Estrutura Semântica</h3>
+                <p>Os elementos semânticos fornecem significado ao conteúdo:</p>
+                
+                <dl>
+                    <dt><code>&lt;header&gt;</code></dt>
+                    <dd>Cabeçalho de uma seção ou página</dd>
+                    
+                    <dt><code>&lt;nav&gt;</code></dt>
+                    <dd>Seção de navegação</dd>
+                    
+                    <dt><code>&lt;main&gt;</code></dt>
+                    <dd>Conteúdo principal da página</dd>
+                    
+                    <dt><code>&lt;article&gt;</code></dt>
+                    <dd>Conteúdo independente e reutilizável</dd>
+                    
+                    <dt><code>&lt;section&gt;</code></dt>
+                    <dd>Seção temática de conteúdo</dd>
+                    
+                    <dt><code>&lt;aside&gt;</code></dt>
+                    <dd>Conteúdo relacionado (sidebar)</dd>
+                    
+                    <dt><code>&lt;footer&gt;</code></dt>
+                    <dd>Rodapé de uma seção ou página</dd>
+                </dl>
+
+                <aside>
+                    <h4>Informação Adicional</h4>
+                    <p>Este elemento <code>&lt;aside&gt;</code> demonstra conteúdo relacionado que complementa o conteúdo principal.</p>
+                </aside>
+
+                <h3>Elementos de Dados</h3>
+                <p>Nascido em <time datetime="1995-03-15">15 de março de 1995</time>.</p>
+                <p>Progresso do projeto: 25% <progress value="25" max="100">25%</progress></p>
+                <p>Progresso do projeto: 50% <progress value="50" max="100">50%</progress></p>
+                <p>Progresso do projeto: 75% <progress value="75" max="100">75%</progress></p>
+                <p>Progresso do projeto: 100% <progress value="100" max="100">100%</progress></p>
+                <p>Uso de memória: <meter value="2" min="0" max="10">2 de 10</meter> (Baixo uso)</p>
+                <p>Uso de memória: <meter value="5" min="0" max="10">5 de 10</meter> (Uso médio)</p>
+                <p>Uso de memória: <meter value="8" min="0" max="10">8 de 10</meter> (Alto uso)</p>
+                <p>Uso de memória: <meter value="10" min="0" max="10">10 de 10</meter> (Uso máximo)</p>
+                <h3>Detalhes Expansíveis</h3>
+                <details>
+                    <summary>Clique para ver mais detalhes</summary>
+                    <p>Este conteúdo estava oculto e agora está visível. O elemento <code>&lt;details&gt;</code> permite criar seções expansíveis sem JavaScript.</p>
+                </details>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <hr>
+        <nav>
+            <h2>Navegação do Rodapé</h2>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <address>
+            <p><strong>Autor:</strong> Marcus Vinicius Fiuza Silva</p>
+            <p>Email: <a href="mailto:marcusvinifiuza739@gmail.com">marcusvinifiuza739@gmail.com</a></p>
+        </address>
+        <p><small>&copy; 2024 - Demonstração de HTML Puro</small></p>
+    </footer>
+</body>
+</html>

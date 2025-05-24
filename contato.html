@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com Marcus Fiuza - Formulário de contato profissional">
+    <meta name="keywords" content="contato, Marcus Fiuza, formulário, email, telefone">
+    <meta name="author" content="Marcus Vinicius Fiuza Silva">
+    <title>Contato - Marcus Vinicius Fiuza Silva</title>
+</head>
+<body>
+    <header>
+        <h1>Entre em Contato</h1>
+        <p>Marcus Vinicius Fiuza Silva</p>
+        <p><em>Desenvolvedor Fullstack</em></p>
+    </header>
+
+    <nav>
+        <h2>Navegação</h2>
+        <ul>
+            <li><a href="index.html" accesskey="1">← Voltar ao Início (Alt+1)</a></li>
+            <li><a href="portfolio.html" accesskey="2">Portfolio (Alt+2)</a></li>
+            <li><a href="sobre-html.html" accesskey="3">Guia HTML (Alt+3)</a></li>
+            <li><a href="#formulario" accesskey="4">Formulário (Alt+4)</a></li>
+            <li><a href="#informacoes" accesskey="5">Informações (Alt+5)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="formulario">
+            <h2>Formulário de Contato</h2>
+            <p>Utilize o formulário abaixo para entrar em contato. Todos os campos marcados com asterisco (*) são obrigatórios.</p>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Informações Pessoais *</legend>
+                    
+                    <p>
+                        <label for="nome">Nome Completo: *</label><br>
+                        <input type="text" id="nome" name="nome" required maxlength="100" size="50" placeholder="Digite seu nome completo">
+                    </p>
+
+                    <p>
+                        <label for="email">Email: *</label><br>
+                        <input type="email" id="email" name="email" required maxlength="100" size="50" placeholder="seu.email@exemplo.com">
+                    </p>
+
+                    <p>
+                        <label for="telefone">Telefone:</label><br>
+                        <input type="tel" id="telefone" name="telefone" pattern="[\(\)\+\-\s0-9]+" maxlength="20" size="20" placeholder="(31) 99999-9999">
+                    </p>
+
+                    <p>
+                        <label for="empresa">Empresa/Organização:</label><br>
+                        <input type="text" id="empresa" name="empresa" maxlength="100" size="50" placeholder="Nome da sua empresa">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Motivo do Contato *</legend>
+                    
+                    <p>
+                        <input type="radio" id="oportunidade" name="motivo" value="oportunidade" required>
+                        <label for="oportunidade">Oportunidade de Trabalho</label>
+                    </p>
+                    
+                    <p>
+                        <input type="radio" id="projeto" name="motivo" value="projeto" required>
+                        <label for="projeto">Proposta de Projeto</label>
+                    </p>
+                    
+                    <p>
+                        <input type="radio" id="consultoria" name="motivo" value="consultoria" required>
+                        <label for="consultoria">Consultoria Técnica</label>
+                    </p>
+                    
+                    <p>
+                        <input type="radio" id="parcerias" name="motivo" value="parcerias" required>
+                        <label for="parcerias">Parcerias</label>
+                    </p>
+                    
+                    <p>
+                        <input type="radio" id="outros" name="motivo" value="outros" required>
+                        <label for="outros">Outros</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Áreas de Interesse</legend>
+                    
+                    <p>
+                        <input type="checkbox" id="web" name="areas[]" value="web">
+                        <label for="web">Desenvolvimento Web</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="mobile" name="areas[]" value="mobile">
+                        <label for="mobile">Desenvolvimento Mobile</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="suporte" name="areas[]" value="suporte">
+                        <label for="suporte">Suporte Técnico</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="eletronica" name="areas[]" value="eletronica">
+                        <label for="eletronica">Eletrônica</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="automacao" name="areas[]" value="automacao">
+                        <label for="automacao">Automação</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="consultoria-tech" name="areas[]" value="consultoria-tech">
+                        <label for="consultoria-tech">Consultoria em TI</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Urgência do Contato</legend>
+                    
+                    <p>
+                        <label for="urgencia">Nível de Urgência:</label><br>
+                        <select id="urgencia" name="urgencia" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="baixa">Baixa - Resposta em até 7 dias</option>
+                            <option value="media">Média - Resposta em até 3 dias</option>
+                            <option value="alta">Alta - Resposta em até 24 horas</option>
+                            <option value="critica">Crítica - Resposta imediata</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="prazo">Prazo do Projeto/Proposta:</label><br>
+                        <input type="date" id="prazo" name="prazo" min="2024-05-24">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mensagem *</legend>
+                    
+                    <p>
+                        <label for="assunto">Assunto: *</label><br>
+                        <input type="text" id="assunto" name="assunto" required maxlength="200" size="50" placeholder="Resumo do assunto">
+                    </p>
+
+                    <p>
+                        <label for="mensagem">Mensagem Detalhada: *</label><br>
+                        <textarea id="mensagem" name="mensagem" required rows="8" cols="60" maxlength="2000" placeholder="Descreva detalhadamente sua solicitação, projeto ou proposta. Inclua informações relevantes como cronograma, orçamento, requisitos técnicos, etc."></textarea>
+                    </p>
+
+                    <p>
+                        <label for="anexo">Anexar Arquivo (PDF, DOC, TXT - máx. 5MB):</label><br>
+                        <input type="file" id="anexo" name="anexo" accept=".pdf,.doc,.docx,.txt">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências de Resposta</legend>
+                    
+                    <p>
+                        <input type="checkbox" id="whatsapp" name="preferencias[]" value="whatsapp">
+                        <label for="whatsapp">WhatsApp</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="email-resp" name="preferencias[]" value="email">
+                        <label for="email-resp">Email</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="ligacao" name="preferencias[]" value="ligacao">
+                        <label for="ligacao">Ligação Telefônica</label>
+                    </p>
+
+                    <p>
+                        <label for="horario">Melhor horário para contato:</label><br>
+                        <select id="horario" name="horario">
+                            <option value="">Sem preferência</option>
+                            <option value="manha">Manhã (8h às 12h)</option>
+                            <option value="tarde">Tarde (13h às 18h)</option>
+                            <option value="noite">Noite (19h às 22h)</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmação e Envio</legend>
+                    
+                    <p>
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Li e concordo que minhas informações serão utilizadas apenas para responder a este contato *</label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                        <label for="newsletter">Gostaria de receber atualizações sobre projetos e oportunidades</label>
+                    </p>
+
+                    <p>
+                        <label for="captcha">Verificação: Quanto é 7 + 3? *</label><br>
+                        <input type="number" id="captcha" name="captcha" required min="10" max="10" placeholder="10">
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar Mensagem</button>
+                        <button type="reset">Limpar Formulário</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="informacoes">
+            <h2>Informações de Contato Direto</h2>
+            
+            <article>
+                <h3>Dados Pessoais</h3>
+                <address>
+                    <p><strong>Marcus Vinicius Fiuza Silva</strong></p>
+                    <p>Desenvolvedor Fullstack</p>
+                    <hr>
+                    <p><strong>Email:</strong> <a href="mailto:marcusvinifiuza739@gmail.com">marcusvinifiuza739@gmail.com</a></p>
+                    <p><strong>Telefone:</strong> <a href="tel:+5531996350383">+55 31 99635-0383</a></p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5531996350383" target="_blank" rel="noopener noreferrer">+55 31 99635-0383</a></p>
+                    <hr>
+                    <p><strong>Endereço:</strong></p>
+                    <p>Belo Horizonte, MG</p>
+                    <p>Brasil</p>
+                    <p><strong>CEP:</strong> Consultar por email</p>
+                </address>
+            </article>
+
+            <article>
+                <h3>Redes Profissionais</h3>
+                <dl>
+                    <dt><strong>LinkedIn:</strong></dt>
+                    <dd><a href="https://linkedin.com/in/devfiuza" target="_blank" rel="noopener noreferrer">linkedin.com/in/devfiuza</a></dd>
+                    
+                    <dt><strong>GitHub:</strong></dt>
+                    <dd><a href="https://github.com/Fiuza3" target="_blank" rel="noopener noreferrer">https://github.com/Fiuza3</a></dd>
+                    
+                    <dt><strong>Portfolio Online:</strong></dt>
+                    <dd><a href="portfolio.html">Ver Portfolio Completo</a></dd>
+                </dl>
+            </article>
+
+            <article>
+                <h3>Horários de Atendimento</h3>
+                <table border="1">
+                    <caption>Disponibilidade para Contato</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Dia da Semana</th>
+                            <th scope="col">Horário</th>
+                            <th scope="col">Tipo de Atendimento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Segunda a Sexta</th>
+                            <td>8h às 18h</td>
+                            <td>Email, telefone, WhatsApp</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sábado</th>
+                            <td>9h às 12h</td>
+                            <td>Email, WhatsApp</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Domingo</th>
+                            <td>Somente emergências</td>
+                            <td>WhatsApp</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <aside>
+                <h3>Localização</h3>
+                <p>Atendo presencialmente na região metropolitana de Belo Horizonte e remotamente em todo o Brasil.</p>
+                
+                <h4>Mapa da Região</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8686!2d-43.9377553!3d-19.9166813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6a6c3f2c2c5fb%3A0x4f4c6e8c8c8c8c8c!2sBelo%20Horizonte%2C%20MG!5e0!3m2!1spt!2sbr!4v1635789123456!5m2!1spt!2sbr" width="400" height="300" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Belo Horizonte, MG - Local de atendimento">
+                </iframe>
+                
+                <h4>Tempo de Resposta</h4>
+                <ul>
+                    <li><strong>Email:</strong> Até 24 horas</li>
+                    <li><strong>WhatsApp:</strong> Até 4 horas</li>
+                    <li><strong>Telefone:</strong> Imediato (horário comercial)</li>
+                    <li><strong>Formulário:</strong> Até 48 horas</li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <nav>
+            <h2>Navegação do Site</h2>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre-html.html">Guia Técnico HTML</a></li>
+                <li><a href="portfolio.html">Portfolio Profissional</a></li>
+            </ul>
+        </nav>
+
+        <address>
+            <h3>Contato Rápido</h3>
+            <p><strong>Marcus Vinicius Fiuza Silva</strong></p>
+            <p>Email: <a href="mailto:marcusvinifiuza739@gmail.com">marcusvinifiuza739@gmail.com</a></p>
+            <p>Telefone: <a href="tel:+5531996350383">+55 31 99635-0383</a></p>
+        </address>
+
+        <p><small>&copy; 2024 Marcus Vinicius Fiuza Silva - Projeto HTML</small></p>
+        <p><small>Este projeto demonstra domínio técnico completo de HTML sem dependências externas</small></p>
+    </footer>
+</body>
+</html>
