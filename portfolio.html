@@ -4,253 +4,338 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio profissional de Marcus Vinicius Fiuza Silva - Desenvolvedor Fullstack">
+    <meta name="description" content="Portfolio profissional de Marcus Vinicius Fiuza Silva - Técnico em Eletrônica e TI">
     <meta name="keywords" content="Marcus Fiuza, Técnico Eletrônica, TI, Desenvolvedor Fullstack, SONDA, Teknisa">
     <meta name="author" content="Marcus Vinicius Fiuza Silva">
     <title>Portfolio - Marcus Vinicius Fiuza Silva</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header>
-        <h1>Marcus Vinicius Fiuza Silva</h1>
-        <p><strong>Técnico em Eletrônica e TI | Desenvolvedor Fullstack</strong></p>
-        <p><em>"Apaixonado por tecnologia, com foco em suporte técnico, automação, dispositivos inteligentes e desenvolvimento fullstack"</em></p>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title animate-fade-up">Marcus Vinicius Fiuza Silva</h1>
+            <p class="site-subtitle animate-slide-right"><strong>Técnico em Eletrônica e TI | Desenvolvedor Fullstack</strong></p>
+            <p><em>"Apaixonado por tecnologia, com foco em suporte técnico, automação, dispositivos inteligentes e desenvolvimento fullstack"</em></p>
+        </div>
     </header>
 
-    <nav>
-        <h2>Navegação</h2>
-        <ul>
-            <li><a href="index.html">← Voltar ao Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#experiencias">Experiências</a></li>
-            <li><a href="#formacao">Formação</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato-info">Contato</a></li>
-        </ul>
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">← Voltar ao Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#experiencias" class="nav-link">Experiências</a></li>
+                <li><a href="#formacao" class="nav-link">Formação</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato-info" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <figure>
-                <img src="foto.jpg" alt="Avatar de Marcus Fiuza - Iniciais MF" width="200" height="200">            </figure>
-                <figcaption>Marcus Vinicius Fiuza Silva</figcaption>
-            
-            <p>Profissional técnico com sólida experiência em eletrônica e tecnologia da informação. Especializado em suporte técnico, desenvolvimento de sistemas e soluções tecnológicas inovadoras. Sempre em busca de novos desafios e oportunidades de crescimento na área de tecnologia.</p>
-            
-            <blockquote>
-                <p>"A tecnologia é melhor quando aproxima as pessoas."</p>
-                <cite>— Matt Mullenweg</cite>
-            </blockquote>
-        </section>
+    <main class="main-content">
+        <div class="container">
+            <section id="sobre" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">Sobre Mim</h2>
+                    </header>
+                    
+                    <div class="flex gap-4" style="align-items: flex-start; flex-wrap: wrap;">
+                        <div style="flex: 0 0 200px;">
+                            <figure>
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjkwIiBmaWxsPSIjNDA0MDQwIi8+CiAgPGNpcmNsZSBjeD0iMTAwIiBjeT0iODAiIHI9IjMwIiBmaWxsPSIjZmZmIi8+CiAgPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE0MCIgcng9IjQ1IiByeT0iMzAiIGZpbGw9IiNmZmYiLz4KICA8dGV4dCB4PSI1MCUiIHk9IjE4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NRjwvdGV4dD4KPC9zdmc+" alt="Avatar de Marcus Fiuza - Iniciais MF" class="rounded-lg shadow" style="width: 100%; height: auto;">
+                                <figcaption class="text-center mt-4 font-bold">Marcus Vinicius Fiuza Silva</figcaption>
+                            </figure>
+                        </div>
+                        
+                        <div style="flex: 1; min-width: 300px;">
+                            <p>Profissional técnico com sólida experiência em eletrônica e tecnologia da informação. Especializado em suporte técnico, desenvolvimento de sistemas e soluções tecnológicas inovadoras. Sempre em busca de novos desafios e oportunidades de crescimento na área de tecnologia.</p>
+                            
+                            <blockquote style="border-left: 4px solid var(--primary-500); padding-left: var(--space-4); margin: var(--space-6) 0; font-style: italic; color: var(--gray-600);">
+                                <p>"A tecnologia é melhor quando aproxima as pessoas."</p>
+                                <cite style="color: var(--gray-500); font-size: var(--text-sm);">— Matt Mullenweg</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section id="experiencias">
-            <h2>Experiências Profissionais</h2>
-            <table border="1">
-                <caption>Histórico Profissional de Marcus Fiuza</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Empresa</th>
-                        <th scope="col">Cargo/Área</th>
-                        <th scope="col">Principais Atividades</th>
-                        <th scope="col">Tecnologias</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">SONDA</th>
-                        <td>Técnico de TI</td>
-                        <td>
+            <section id="experiencias" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">Experiências Profissionais</h2>
+                    </header>
+                    
+                    <div class="table-container">
+                        <table class="professional-table">
+                            <caption>Histórico Profissional de Marcus Fiuza</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Empresa</th>
+                                    <th scope="col">Cargo/Área</th>
+                                    <th scope="col">Principais Atividades</th>
+                                    <th scope="col">Tecnologias</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">SONDA</th>
+                                    <td>Técnico de TI</td>
+                                    <td>
+                                        <ul style="margin: 0; padding-left: var(--space-4);">
+                                            <li>Suporte técnico especializado</li>
+                                            <li>Manutenção de hardware e software</li>
+                                            <li>Elaboração de relatórios técnicos</li>
+                                            <li>Resolução de incidentes</li>
+                                        </ul>
+                                    </td>
+                                    <td><span class="font-mono text-sm">Windows, Linux, Hardware PC, Redes</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Teknisa</th>
+                                    <td>Desenvolvedor Fullstack</td>
+                                    <td>
+                                        <ul style="margin: 0; padding-left: var(--space-4);">
+                                            <li>Desenvolvimento com framework Zeedhi</li>
+                                            <li>Criação de aplicações web</li>
+                                            <li>Integração frontend/backend</li>
+                                            <li>Manutenção de sistemas</li>
+                                        </ul>
+                                    </td>
+                                    <td><span class="font-mono text-sm">Zeedhi Framework, JavaScript, SQL</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Oficina dos Bits</th>
+                                    <td>Desenvolvedor</td>
+                                    <td>
+                                        <ul style="margin: 0; padding-left: var(--space-4);">
+                                            <li>Sistema de folha de ponto digital</li>
+                                            <li>Desenvolvimento backend em Python</li>
+                                            <li>Interface frontend em JavaScript</li>
+                                            <li>Automação de processos</li>
+                                        </ul>
+                                    </td>
+                                    <td><span class="font-mono text-sm">Python, JavaScript, HTML, CSS</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="formacao" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">Formação Acadêmica</h2>
+                    </header>
+                    
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <dl>
+                                <dt><strong class="text-primary">Bacharelado em Sistemas de Informação</strong></dt>
+                                <dd style="margin-bottom: var(--space-6);">
+                                    <em>Estácio</em><br>
+                                    Formação superior focada em desenvolvimento de sistemas, análise de dados, gerenciamento de projetos e tecnologias emergentes.
+                                </dd>
+
+                                <dt><strong class="text-primary">Técnico em TI e Eletrônica</strong></dt>
+                                <dd>
+                                    <em>E.E.T.I Professor Fontes</em><br>
+                                    Formação técnica abrangente em eletrônica digital e analógica, manutenção de equipamentos, programação e redes de computadores.
+                                </dd>
+                            </dl>
+                        </div>
+                        
+                        <div>
+                            <h3>Certificações e Cursos</h3>
+                            <ol>
+                                <li style="margin-bottom: var(--space-4);">
+                                    <strong class="text-primary">Curso de JavaScript e TypeScript</strong>
+                                    <br><em>Udemy</em>
+                                    <br>Certificação em desenvolvimento frontend e backend com JavaScript moderno e TypeScript.
+                                </li>
+                                <li>
+                                    <strong class="text-primary">Vue.js Completo</strong>
+                                    <br><em>Udemy</em>
+                                    <br>Especialização em framework Vue.js para desenvolvimento de aplicações web reativas.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="habilidades" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">Habilidades Técnicas</h2>
+                    </header>
+                    
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <h3 class="text-primary">Linguagens de Programação</h3>
+                            <ul>
+                                <li><strong>JavaScript</strong> - <span class="text-success">Avançado</span></li>
+                                <li><strong>TypeScript</strong> - <span class="text-warning">Intermediário</span></li>
+                                <li><strong>Python</strong> - <span class="text-warning">Intermediário</span></li>
+                                <li><strong>HTML5</strong> - <span class="text-success">Avançado</span></li>
+                                <li><strong>CSS3</strong> - <span class="text-warning">Intermediário</span></li>
+                                <li><strong>SQL</strong> - <span class="text-warning">Intermediário</span></li>
+                            </ul>
+
+                            <h3 class="text-primary">Frameworks e Tecnologias</h3>
+                            <ul>
+                                <li><strong>Vue.js</strong> - <span class="text-warning">Intermediário</span></li>
+                                <li><strong>Node.js</strong> - <span class="text-warning">Intermediário</span></li>
+                                <li><strong>Zeedhi Framework</strong> - <span class="text-success">Avançado</span></li>
+                                <li><strong>Express.js</strong> - <span class="text-info">Básico</span></li>
+                                <li><strong>Bootstrap</strong> - <span class="text-warning">Intermediário</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-primary">Sistemas e Ferramentas</h3>
+                            <ul>
+                                <li><strong>Linux</strong> - <span class="text-warning">Intermediário</span></li>
+                                <li><strong>Windows</strong> - <span class="text-success">Avançado</span></li>
+                                <li><strong>Git/GitHub</strong> - <span class="text-warning">Intermediário</span></li>
+                                <li><strong>MySQL</strong> - <span class="text-warning">Intermediário</span></li>
+                                <li><strong>Hardware PC</strong> - <span class="text-success">Avançado</span></li>
+                                <li><strong>Redes</strong> - <span class="text-warning">Intermediário</span></li>
+                            </ul>
+
+                            <h3 class="text-primary">Competências Profissionais</h3>
                             <ul>
                                 <li>Suporte técnico especializado</li>
-                                <li>Manutenção de hardware e software</li>
-                                <li>Elaboração de relatórios técnicos</li>
-                                <li>Resolução de incidentes</li>
-                            </ul>
-                        </td>
-                        <td>Windows, Linux, Hardware PC, Redes</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Teknisa</th>
-                        <td>Desenvolvedor Fullstack</td>
-                        <td>
-                            <ul>
-                                <li>Desenvolvimento com framework Zeedhi</li>
-                                <li>Criação de aplicações web</li>
-                                <li>Integração frontend/backend</li>
-                                <li>Manutenção de sistemas</li>
-                            </ul>
-                        </td>
-                        <td>Zeedhi Framework, JavaScript, SQL</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Oficina dos Bits</th>
-                        <td>Desenvolvedor</td>
-                        <td>
-                            <ul>
-                                <li>Sistema de folha de ponto digital</li>
-                                <li>Desenvolvimento backend em Python</li>
-                                <li>Interface frontend em JavaScript</li>
+                                <li>Desenvolvimento fullstack</li>
                                 <li>Automação de processos</li>
+                                <li>Análise e resolução de problemas</li>
+                                <li>Documentação técnica</li>
+                                <li>Trabalho em equipe</li>
                             </ul>
-                        </td>
-                        <td>Python, JavaScript, HTML, CSS</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section id="formacao">
-            <h2>Formação Acadêmica</h2>
-            <dl>
-                <dt><strong>Bacharelado em Sistemas de Informação</strong></dt>
-                <dd>
-                    <em>Estácio</em><br>
-                    Formação superior focada em desenvolvimento de sistemas, análise de dados, gerenciamento de projetos e tecnologias emergentes.
-                </dd>
+            <section id="projetos" class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">Projetos Destacados</h2>
+                    </header>
+                    
+                    <div class="grid grid-cols-1" style="gap: var(--space-8);">
+                        <article style="border-left: 4px solid var(--primary-500); padding-left: var(--space-6);">
+                            <h3 class="text-primary">Sistema de Folha de Ponto Digital</h3>
+                            <p><strong>Empresa:</strong> Oficina dos Bits</p>
+                            <p><strong>Descrição:</strong> Desenvolvimento de sistema completo para controle de ponto digital, incluindo interface web responsiva e backend robusto para gerenciamento de dados de funcionários.</p>
+                            <p><strong>Tecnologias utilizadas:</strong> <span class="font-mono bg-gray-100 p-4 rounded">Python, JavaScript, HTML5, CSS3, Banco de dados</span></p>
+                            <p><strong>Principais funcionalidades:</strong></p>
+                            <ul>
+                                <li>Registro de ponto com validação</li>
+                                <li>Relatórios automáticos</li>
+                                <li>Interface administrativa</li>
+                                <li>Integração com banco de dados</li>
+                            </ul>
+                        </article>
 
-                <dt><strong>Técnico em TI e Eletrônica</strong></dt>
-                <dd>
-                    <em>E.E.T.I Professor Fontes</em><br>
-                    Formação técnica abrangente em eletrônica digital e analógica, manutenção de equipamentos, programação e redes de computadores.
-                </dd>
-            </dl>
+                        <article style="border-left: 4px solid var(--success); padding-left: var(--space-6);">
+                            <h3 class="text-success">Desenvolvimento com Framework Zeedhi</h3>
+                            <p><strong>Empresa:</strong> Teknisa</p>
+                            <p><strong>Descrição:</strong> Criação e manutenção de aplicações empresariais utilizando o framework proprietário Zeedhi, com foco em soluções web integradas.</p>
+                            <p><strong>Responsabilidades:</strong></p>
+                            <ul>
+                                <li>Desenvolvimento de módulos personalizados</li>
+                                <li>Integração com sistemas existentes</li>
+                                <li>Otimização de performance</li>
+                                <li>Documentação técnica</li>
+                            </ul>
+                        </article>
 
-            <h3>Certificações e Cursos</h3>
-            <ol>
-                <li>
-                    <strong>Curso de JavaScript e TypeScript</strong>
-                    <br><em>Udemy</em>
-                    <br>Certificação em desenvolvimento frontend e backend com JavaScript moderno e TypeScript.
-                </li>
-                <li>
-                    <strong>Vue.js Completo</strong>
-                    <br><em>Udemy</em>
-                    <br>Especialização em framework Vue.js para desenvolvimento de aplicações web reativas.
-                </li>
-            </ol>
-        </section>
+                        <article style="border-left: 4px solid var(--warning); padding-left: var(--space-6);">
+                            <h3 class="text-warning">Demonstração HTML + CSS Avançado</h3>
+                            <p><strong>Projeto Pessoal:</strong> Portfolio Técnico</p>
+                            <p><strong>Descrição:</strong> Desenvolvimento de projeto com HTML semântico e CSS moderno, demonstrando domínio completo das tecnologias frontend fundamentais.</p>
+                            <p><strong>Objetivos alcançados:</strong></p>
+                            <ul>
+                                <li>Semântica HTML rigorosa</li>
+                                <li>CSS Grid e Flexbox modernos</li>
+                                <li>Sistema de design escalável</li>
+                                <li>Acessibilidade completa</li>
+                                <li>Design responsivo</li>
+                                <li>Performance otimizada</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-        <section id="habilidades">
-            <h2>Habilidades Técnicas</h2>
-            <article>
-                <h3>Linguagens de Programação</h3>
-                <ul>
-                    <li><strong>JavaScript</strong> - Avançado</li>
-                    <li><strong>TypeScript</strong> - Intermediário</li>
-                    <li><strong>Python</strong> - Intermediário</li>
-                    <li><strong>HTML5</strong> - Avançado</li>
-                    <li><strong>CSS3</strong> - Intermediário</li>
-                    <li><strong>SQL</strong> - Intermediário</li>
-                </ul>
-
-                <h3>Frameworks e Tecnologias</h3>
-                <ul>
-                    <li><strong>Vue.js</strong> - Intermediário</li>
-                    <li><strong>Node.js</strong> - Intermediário</li>
-                    <li><strong>Zeedhi Framework</strong> - Avançado</li>
-                    <li><strong>Express.js</strong> - Básico</li>
-                    <li><strong>Bootstrap</strong> - Intermediário</li>
-                </ul>
-
-                <h3>Sistemas e Ferramentas</h3>
-                <ul>
-                    <li><strong>Linux</strong> - Intermediário</li>
-                    <li><strong>Windows</strong> - Avançado</li>
-                    <li><strong>Git/GitHub</strong> - Intermediário</li>
-                    <li><strong>MySQL</strong> - Intermediário</li>
-                    <li><strong>Hardware PC</strong> - Avançado</li>
-                    <li><strong>Redes</strong> - Intermediário</li>
-                </ul>
-
-                <h3>Competências Profissionais</h3>
-                <ul>
-                    <li>Suporte técnico especializado</li>
-                    <li>Desenvolvimento fullstack</li>
-                    <li>Automação de processos</li>
-                    <li>Análise e resolução de problemas</li>
-                    <li>Documentação técnica</li>
-                    <li>Trabalho em equipe</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="projetos">
-            <h2>Projetos Destacados</h2>
-            <article>
-                <h3>Sistema de Folha de Ponto Digital</h3>
-                <p><strong>Empresa:</strong> Oficina dos Bits</p>
-                <p><strong>Descrição:</strong> Desenvolvimento de sistema completo para controle de ponto digital, incluindo interface web responsiva e backend robusto para gerenciamento de dados de funcionários.</p>
-                <p><strong>Tecnologias utilizadas:</strong> Python, JavaScript, HTML5, CSS3, Banco de dados</p>
-                <p><strong>Principais funcionalidades:</strong></p>
-                <ul>
-                    <li>Registro de ponto com validação</li>
-                    <li>Relatórios automáticos</li>
-                    <li>Interface administrativa</li>
-                    <li>Integração com banco de dados</li>
-                </ul>
-
-                <h3>Desenvolvimento com Framework Zeedhi</h3>
-                <p><strong>Empresa:</strong> Teknisa</p>
-                <p><strong>Descrição:</strong> Criação e manutenção de aplicações empresariais utilizando o framework proprietário Zeedhi, com foco em soluções web integradas.</p>
-                <p><strong>Responsabilidades:</strong></p>
-                <ul>
-                    <li>Desenvolvimento de módulos personalizados</li>
-                    <li>Integração com sistemas existentes</li>
-                    <li>Otimização de performance</li>
-                    <li>Documentação técnica</li>
-                </ul>
-
-                <h3>Demonstração HTML Puro</h3>
-                <p><strong>Projeto Pessoal:</strong> Portfolio Técnico</p>
-                <p><strong>Descrição:</strong> Desenvolvimento de projeto exclusivamente em HTML puro, demonstrando domínio completo da linguagem de marcação sem dependências externas.</p>
-                <p><strong>Objetivos alcançados:</strong></p>
-                <ul>
-                    <li>Semântica HTML rigorosa</li>
-                    <li>Acessibilidade completa</li>
-                    <li>Validação W3C</li>
-                    <li>Demonstração técnica abrangente</li>
-                </ul>
-            </article>
-        </section>
-
-        <aside>
-            <h2>Links Profissionais</h2>
-            <nav>
-                <h3>Redes e Portfólios</h3>
-                <ul>
-                    <li><a href="https://linkedin.com/in/devfiuza target="_blank" rel="noopener noreferrer">LinkedIn - Marcus Fiuza</a></li>
-                    <li><a href="https://github.com/Fiuza3" target="_blank" rel="noopener noreferrer">GitHub - Repositórios</a></li>
-                    <li><a href="contato.html">Formulário de Contato</a></li>
-                </ul>
-            </nav>
-
-            <h3>Localização</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8686!2d-43.9377553!3d-19.9166813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6a6c3f2c2c5fb%3A0x4f4c6e8c8c8c8c8c!2sBelo%20Horizonte%2C%20MG!5e0!3m2!1spt!2sbr!4v1635789123456!5m2!1spt!2sbr" width="300" height="225" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização em Belo Horizonte, MG">
-            </iframe>
-        </aside>
+            <aside class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">Links Profissionais</h2>
+                    </header>
+                    
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <h3>Redes e Portfólios</h3>
+                            <nav>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: var(--space-3);">
+                                        <a href="https://linkedin.com/in/marcus-fiuza" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: var(--space-2);">
+                                            LinkedIn - Marcus Fiuza
+                                        </a>
+                                    </li>
+                                    <li style="margin-bottom: var(--space-3);">
+                                        <a href="https://github.com/marcus-fiuza" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: var(--space-2);">
+                                            GitHub - Repositórios
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contato.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: var(--space-2);">
+                                            Formulário de Contato
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <div>
+                            <h3>Localização</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.8686!2d-43.9377553!3d-19.9166813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6a6c3f2c2c5fb%3A0x4f4c6e8c8c8c8c8c!2sBelo%20Horizonte%2C%20MG!5e0!3m2!1spt!2sbr!4v1635789123456!5m2!1spt!2sbr" width="100%" height="225" style="border:0; border-radius: var(--radius-lg);" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização em Belo Horizonte, MG">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </main>
 
-    <footer id="contato-info">
-        <hr>
-        <h2>Informações de Contato</h2>
-        <address>
-            <h3>Marcus Vinicius Fiuza Silva</h3>
-            <p><strong>Email:</strong> <a href="mailto:marcusvinifiuza739@gmail.com">marcusvinifiuza739@gmail.com</a></p>
-            <p><strong>Telefone:</strong> <a href="tel:+5531996350383">+55 31 99635-0383</a></p>
-            <p><strong>Endereço:</strong>Belo Horizonte, MG - Brasil</p>
-        </address>
+    <footer id="contato-info" class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2>Informações de Contato</h2>
+                <address>
+                    <h3>Marcus Vinicius Fiuza Silva</h3>
+                    <p><strong>Email:</strong> <a href="mailto:marcusvinifiuza739@gmail.com" class="footer-link">marcusvinifiuza739@gmail.com</a></p>
+                    <p><strong>Telefone:</strong> <a href="tel:+5531996350383" class="footer-link">+55 31 99635-0383</a></p>
+                    <p><strong>Endereço:</strong> Rua Luiza Batista Guedes, 61<br>Belo Horizonte, MG - Brasil</p>
+                </address>
 
-        <nav>
-            <h3>Navegação do Site</h3>
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="sobre-html.html">Guia HTML</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+                <nav style="margin-top: var(--space-6);">
+                    <h3>Navegação do Site</h3>
+                    <ul style="list-style: none; display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+                        <li><a href="index.html" class="footer-link">Página Inicial</a></li>
+                        <li><a href="sobre-html.html" class="footer-link">Guia HTML</a></li>
+                        <li><a href="sobre-css.html" class="footer-link">Guia CSS</a></li>
+                        <li><a href="contato.html" class="footer-link">Contato</a></li>
+                    </ul>
+                </nav>
 
-        <p><small>&copy; 2024 Marcus Vinicius Fiuza Silva - Todos os direitos reservados</small></p>
+                <p style="margin-top: var(--space-6);"><small>&copy; 2024 Marcus Vinicius Fiuza Silva - Todos os direitos reservados</small></p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
