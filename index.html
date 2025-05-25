@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,140 +8,227 @@
     <meta name="author" content="Marcus Vinicius Fiuza Silva">
     <meta name="robots" content="index, follow">
     <title>Portfolio HTML Puro - Marcus Fiuza</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header>
-        <h1>Projeto HTML - Demonstração Técnica</h1>
-        <p><strong>Desenvolvido por:</strong> Marcus Vinicius Fiuza Silva</p>
-        <p><em>Desenvolvedor Fullstack</em></p>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title animate-fade-up">Projeto HTML + CSS Avançado</h1>
+            <p class="site-subtitle animate-slide-right"><strong>Desenvolvido por:</strong> Marcus Vinicius Fiuza Silva</p>
+            <p><em>Técnico em Eletrônica e TI - Especialista em Desenvolvimento Fullstack</em></p>
+        </div>
     </header>
 
-    <nav>
-        <h2>Navegação Principal</h2>
-        <ul>
-            <li><a href="#inicio" accesskey="1" title="Ir para início (Alt+1)">Início</a></li>
-            <li><a href="sobre-html.html" accesskey="2" title="Guia técnico de HTML (Alt+2)">Guia HTML</a></li>
-            <li><a href="portfolio.html" accesskey="3" title="Portfolio profissional (Alt+3)">Portfolio</a></li>
-            <li><a href="contato.html" accesskey="4" title="Página de contato (Alt+4)">Contato</a></li>
-        </ul>
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#inicio" class="nav-link" accesskey="1" title="Ir para início (Alt+1)">Início</a></li>
+                <li><a href="sobre-html.html" class="nav-link" accesskey="2" title="Guia técnico de HTML (Alt+2)">Guia HTML</a></li>
+                <li><a href="sobre-css.html" class="nav-link" accesskey="3" title="Guia completo de CSS (Alt+3)">Guia CSS</a></li>
+                <li><a href="portfolio.html" class="nav-link" accesskey="4" title="Portfolio profissional (Alt+4)">Portfolio</a></li>
+                <li><a href="contato.html" class="nav-link" accesskey="5" title="Página de contato (Alt+5)">Contato</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main id="inicio">
-        <section>
-            <h2>Sobre Este Projeto</h2>
-            <p>Este projeto demonstra o uso <strong>exclusivo</strong> de HTML puro, sem CSS, JavaScript ou outras tecnologias externas. O objetivo é mostrar domínio técnico completo da linguagem HTML através de:</p>
-            
-            <ol>
-                <li><strong>Semântica rigorosa:</strong> Uso correto de elementos estruturais</li>
-                <li><strong>Acessibilidade:</strong> Suporte a tecnologias assistivas</li>
-                <li><strong>Padronização:</strong> Conformidade com W3C</li>
-                <li><strong>Completude:</strong> Demonstração de todos os elementos relevantes</li>
-            </ol>
-        </section>
+    <main id="inicio" class="main-content">
+        <div class="container">
+            <section class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">Sobre Este Projeto</h2>
+                    </header>
+                    <p>Este projeto demonstra o uso de <strong>HTML semântico</strong> e <strong>CSS avançado</strong>, sem JavaScript ou outras tecnologias externas. O objetivo é mostrar domínio técnico completo através de:</p>
+                    
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <h3 class="text-primary">HTML Puro</h3>
+                            <ol>
+                                <li><strong>Semântica rigorosa:</strong> Uso correto de elementos estruturais</li>
+                                <li><strong>Acessibilidade:</strong> Suporte a tecnologias assistivas</li>
+                                <li><strong>Padronização:</strong> Conformidade com W3C</li>
+                                <li><strong>Completude:</strong> Demonstração de todos os elementos relevantes</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h3 class="text-primary">CSS Moderno</h3>
+                            <ol>
+                                <li><strong>CSS Grid & Flexbox:</strong> Layouts modernos e responsivos</li>
+                                <li><strong>Custom Properties:</strong> Sistema de design tokens</li>
+                                <li><strong>Animações CSS:</strong> Transições e keyframes avançadas</li>
+                                <li><strong>Design System:</strong> Paleta de cores e tipografia consistente</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section>
-            <h2>Resumo das Páginas</h2>
-            <table border="1">
-                <caption>Estrutura do Projeto HTML</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Página</th>
-                        <th scope="col">Descrição</th>
-                        <th scope="col">Elementos Principais</th>
-                        <th scope="col">Acesso</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">index.html</th>
-                        <td>Página inicial com navegação e resumo</td>
-                        <td>header, nav, main, section, table</td>
-                        <td><a href="#inicio">Atual</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">sobre-html.html</th>
-                        <td>Guia técnico completo de elementos HTML</td>
-                        <td>article, code, pre, dl, figure</td>
-                        <td><a href="sobre-html.html">Acessar</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">portfolio.html</th>
-                        <td>Portfolio profissional de Marcus Fiuza</td>
-                        <td>address, iframe, img, aside</td>
-                        <td><a href="portfolio.html">Acessar</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">contato.html</th>
-                        <td>Formulário de contato funcional</td>
-                        <td>form, fieldset, legend, label</td>
-                        <td><a href="contato.html">Acessar</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <section class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">Estrutura do Projeto</h2>
+                    </header>
+                    <div class="table-container">
+                        <table class="professional-table">
+                            <caption>Estrutura Completa do Projeto</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Página</th>
+                                    <th scope="col">Descrição</th>
+                                    <th scope="col">Tecnologias Demonstradas</th>
+                                    <th scope="col">Acesso</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">index.html</th>
+                                    <td>Página inicial com navegação e resumo</td>
+                                    <td>HTML5, CSS Grid, Flexbox, Animações</td>
+                                    <td><a href="#inicio" class="text-primary">Atual</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">sobre-html.html</th>
+                                    <td>Guia técnico completo de elementos HTML</td>
+                                    <td>Semântica HTML, Acessibilidade, Forms</td>
+                                    <td><a href="sobre-html.html" class="text-primary">Acessar</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">sobre-css.html</th>
+                                    <td>Demonstração avançada de CSS moderno</td>
+                                    <td>CSS Grid, Custom Properties, Animations</td>
+                                    <td><a href="sobre-css.html" class="text-primary">Acessar</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">portfolio.html</th>
+                                    <td>Portfolio profissional de Marcus Fiuza</td>
+                                    <td>Layout responsivo, Componentes, Tipografia</td>
+                                    <td><a href="portfolio.html" class="text-primary">Acessar</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">contato.html</th>
+                                    <td>Formulário de contato funcional</td>
+                                    <td>Forms avançados, Validação, UX</td>
+                                    <td><a href="contato.html" class="text-primary">Acessar</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
 
-        <section>
-            <h2>Características Técnicas</h2>
-            <h3>Acessibilidade</h3>
-            <ul>
-                <li>Textos alternativos em todas as imagens</li>
-                <li>Rótulos associados a todos os campos de formulário</li>
-                <li>Teclas de acesso (accesskey) para navegação</li>
-                <li>Estrutura hierárquica de cabeçalhos</li>
-                <li>Suporte a leitores de tela</li>
-            </ul>
+            <section class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">Características Técnicas</h2>
+                    </header>
+                    
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <h3>Acessibilidade</h3>
+                            <ul>
+                                <li>Textos alternativos em todas as imagens</li>
+                                <li>Rótulos associados a todos os campos de formulário</li>
+                                <li>Teclas de acesso (accesskey) para navegação</li>
+                                <li>Estrutura hierárquica de cabeçalhos</li>
+                                <li>Suporte a leitores de tela</li>
+                                <li>Contraste adequado de cores</li>
+                            </ul>
 
-            <h3>Semântica</h3>
-            <ul>
-                <li>Elementos estruturais adequados (header, nav, main, section, footer)</li>
-                <li>Marcação semântica para conteúdo (article, aside, figure)</li>
-                <li>Tabelas com escopo e legendas apropriadas</li>
-                <li>Formulários com agrupamento lógico</li>
-            </ul>
-        </section>
+                            <h3>Semântica HTML</h3>
+                            <ul>
+                                <li>Elementos estruturais adequados (header, nav, main, section, footer)</li>
+                                <li>Marcação semântica para conteúdo (article, aside, figure)</li>
+                                <li>Tabelas com escopo e legendas apropriadas</li>
+                                <li>Formulários com agrupamento lógico</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3>CSS Moderno</h3>
+                            <ul>
+                                <li>Sistema de design com CSS Custom Properties</li>
+                                <li>Layout responsivo com CSS Grid e Flexbox</li>
+                                <li>Animações e transições suaves</li>
+                                <li>Tipografia escalável e legível</li>
+                                <li>Paleta de cores profissional</li>
+                                <li>Performance otimizada</li>
+                            </ul>
 
-        <section>
-            <h2>Demonstração de Elementos</h2>
-            <h3>Formatação de Texto</h3>
-            <p>Este parágrafo demonstra diversos elementos de formatação:</p>
-            <p>
-                <strong>Texto importante</strong>, <em>texto enfatizado</em>, 
-                <mark>texto destacado</mark>, <code>código inline</code>,
-                <abbr title="HyperText Markup Language">HTML</abbr>,
-                <time datetime="2024-05-24">24 de maio de 2024</time>
-            </p>
+                            <h3>Responsividade</h3>
+                            <ul>
+                                <li>Mobile-first design</li>
+                                <li>Breakpoints bem definidos</li>
+                                <li>Imagens e mídias adaptáveis</li>
+                                <li>Navegação colapsível</li>
+                                <li>Tipografia fluida</li>
+                                <li>Touch-friendly interfaces</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <h3>Citações</h3>
-            <blockquote cite="https://www.w3.org/standards/">
-                <p>"O objetivo da Web é servir à humanidade. Construímos a Web para que funcione para todos, independentemente de hardware, software, idioma, localização ou capacidade."</p>
-            </blockquote>
-            <cite>— W3C Mission Statement</cite>
+            <section class="section">
+                <div class="card animate-fade-up">
+                    <header class="card-header">
+                        <h2 class="card-title">Demonstração de Elementos</h2>
+                    </header>
+                    
+                    <h3>Formatação de Texto</h3>
+                    <p>Este parágrafo demonstra diversos elementos de formatação:</p>
+                    <p>
+                        <strong>Texto importante</strong>, <em>texto enfatizado</em>, 
+                        <mark style="background: var(--warning); color: white; padding: var(--space-1) var(--space-2); border-radius: var(--radius-sm);">texto destacado</mark>, 
+                        <code>código inline</code>,
+                        <abbr title="HyperText Markup Language">HTML</abbr>,
+                        <time datetime="2024-05-24">24 de maio de 2024</time>
+                    </p>
 
-            <h3>Código Pré-formatado</h3>
-            <pre>
-&lt;!DOCTYPE html&gt;
+                    <h3>Citações</h3>
+                    <blockquote style="border-left: 4px solid var(--primary-500); padding-left: var(--space-4); margin: var(--space-6) 0; font-style: italic; color: var(--gray-600);" cite="https://www.w3.org/standards/">
+                        <p>"O objetivo da Web é servir à humanidade. Construímos a Web para que funcione para todos, independentemente de hardware, software, idioma, localização ou capacidade."</p>
+                    </blockquote>
+                    <cite style="color: var(--gray-500); font-size: var(--text-sm);">— W3C Mission Statement</cite>
+
+                    <h3>Código Pré-formatado</h3>
+                    <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="pt-BR"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
-    &lt;title&gt;HTML Exemplo&lt;/title&gt;
+    &lt;title&gt;HTML + CSS Exemplo&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles/main.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+    &lt;header class="site-header"&gt;
+        &lt;h1 class="site-title"&gt;Olá, Mundo!&lt;/h1&gt;
+    &lt;/header&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-            </pre>
-        </section>
+&lt;/html&gt;</code></pre>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <hr>
-        <address>
-            <p><strong>Marcus Vinicius Fiuza Silva</strong></p>
-            <p>Email: <a href="mailto:marcusvinifiuza739@gmail.com">marcusvinifiuza739@gmail.com</a></p>
-            <p>Telefone: <a href="tel:+5531996350383">+55 31 99635-0383</a></p>
-            <p>Belo Horizonte, MG - Brasil</p>
-        </address>
-        <p><small>&copy; 2024 - Projeto de Demonstração HTML Puro</small></p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <address>
+                    <p><strong>Marcus Vinicius Fiuza Silva</strong></p>
+                    <p>Email: <a href="mailto:marcusvinifiuza739@gmail.com" class="footer-link">marcusvinifiuza739@gmail.com</a></p>
+                    <p>Telefone: <a href="tel:+5531996350383" class="footer-link">+55 31 99635-0383</a></p>
+                    <p>Belo Horizonte, MG - Brasil</p>
+                </address>
+                <nav style="margin-top: var(--space-6);">
+                    <ul style="list-style: none; display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+                        <li><a href="sobre-html.html" class="footer-link">Guia HTML</a></li>
+                        <li><a href="sobre-css.html" class="footer-link">Guia CSS</a></li>
+                        <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+                        <li><a href="contato.html" class="footer-link">Contato</a></li>
+                    </ul>
+                </nav>
+                <p style="margin-top: var(--space-6);"><small>&copy; 2024 - Projeto de Demonstração HTML + CSS Avançado</small></p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
