@@ -1,10 +1,15 @@
-# 🌐 HTMLNotAlone
+# Projeto de Demonstração do CSS no projeto SoHTML
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![W3C Validated](https://img.shields.io/badge/W3C-Validated-blue)
+![Accessibility](https://img.shields.io/badge/Accessibility-Compliant-green)
 
 HTMLNotAlone é a continuação direta do projeto [SoHTML](https://github.com/Fiuza3/SoHTML), expandindo a estrutura semântica em HTML puro com **estilização completa via CSS3**, mantendo o foco em acessibilidade, boas práticas e padronização. Nesta versão, o HTML não está mais sozinho — ele ganha vida com estilos nativos, mantendo o projeto limpo, didático e 100% livre de dependências externas.
 
 ---
 
-🎯 **Motivação**
+### 🎯 Motivação
 
 A motivação para este projeto surgiu da vontade de complementar a base estrutural do HTML com uma camada visual sólida e acessível. Com foco na clareza, responsividade e boas práticas de design, HTMLNotAlone tem como objetivos:
 
@@ -15,7 +20,7 @@ A motivação para este projeto surgiu da vontade de complementar a base estrutu
 
 ---
 
-🚀 **Características Principais**
+## 🚀 Características Principais
 
 🎨 Estilização Completa  
 - Uso de classes reutilizáveis e responsivas  
@@ -37,7 +42,7 @@ A motivação para este projeto surgiu da vontade de complementar a base estrutu
 
 ---
 
-📁 **Estrutura do Projeto**
+## 📂 Estrutura do Projeto
 
 ```
 📦 HTMLNotAlone
@@ -80,40 +85,38 @@ A motivação para este projeto surgiu da vontade de complementar a base estrutu
 - 📚 Código comentado, ideal para estudos e reuso  
 - 🤖 CSS gerado com suporte de IA (ChatGPT), com revisão manual para aprendizado e refino técnico  
 
-```css
-/* Este CSS foi gerado com suporte de IA (ChatGPT) para acelerar o desenvolvimento 
-   e reforçar o aprendizado prático de estilização moderna. */
-```
-
 ---
 
-👨‍💻 **Sobre o Autor**
+## 👨‍💻 Sobre o Autor
 
-**Marcus Vinicius Fiuza Silva** é desenvolvedor fullstack com formação técnica em Eletrônica e TI. Atualmente cursando **Bacharelado em Sistemas de Informação**, possui experiência nas seguintes áreas:
+**Marcus Vinicius Fiuza Silva** é um desenvolvedor fullstack com formação técnica em Eletrônica e TI. Atualmente cursando Bacharelado em Sistemas de Informação, possui experiência profissional em:
 
-- Desenvolvimento com framework Zeedhi (Teknisa)  
-- Suporte técnico especializado (SONDA)  
-- Sistemas web personalizados (Oficina dos Bits)  
+- Desenvolvimento com framework Zeedhi na Teknisa
+- Suporte técnico especializado na SONDA
+- Desenvolvimento de sistemas na Oficina dos Bits
 
-**Habilidades Técnicas**  
-- Linguagens: JavaScript, TypeScript, Python, HTML5, CSS3, SQL  
-- Frameworks: Vue.js, Node.js, Zeedhi, Express.js  
-- Sistemas: Linux, Windows, Git/GitHub, MySQL  
+### Habilidades Técnicas
+- **Linguagens**: JavaScript, TypeScript, Python, HTML5, CSS3, SQL
+- **Frameworks**: Vue.js, Node.js, Zeedhi Framework, Express.js
+- **Sistemas**: Linux, Windows, Git/GitHub, MySQL
+
+## 📞 Contato
+
+- **Email**: [marcusvinifiuza739@gmail.com](mailto:marcusvinifiuza739@gmail.com)
+- **LinkedIn**: [linkedin.com/in/devfiuza](https://linkedin.com/in/devfiuza)
+- **GitHub**: [github.com/Fiuza3](https://github.com/Fiuza3)
+- **Telefone**: +55 31 99635-0383
+- **Localização**: Belo Horizonte, MG - Brasil
+
+## 📄 Licença
+
+© 2024 Marcus Vinicius Fiuza Silva - Todos os direitos reservados
 
 ---
-
-📞 **Contato**
-
-- 📧 Email: marcusvinifiuza739@gmail.com  
-- 🔗 LinkedIn: [linkedin.com/in/devfiuza](https://linkedin.com/in/devfiuza)  
-- 💻 GitHub: [github.com/Fiuza3](https://github.com/Fiuza3)  
-- 📱 Telefone: +55 31 99635-0383  
-- 📍 Localização: Belo Horizonte, MG - Brasil  
-
----
-
 📄 **Licença**
 
-© 2024 Marcus Vinicius Fiuza Silva — Todos os direitos reservados.  
-Projeto desenvolvido com HTML e CSS puros como demonstração técnica.  
-Criado para evidenciar domínio prático e teórico da base da web.
+<p align="center">
+<i>© 2024 Marcus Vinicius Fiuza Silva — Todos os direitos reservados.</i><br>
+<i>Projeto desenvolvido com HTML e CSS puros como demonstração técnica.</i>
+<i>Criado para evidenciar domínio prático e teórico da base da web.</i>
+</p>
